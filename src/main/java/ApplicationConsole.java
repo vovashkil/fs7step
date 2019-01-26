@@ -6,7 +6,7 @@ public class ApplicationConsole {
         Scanner in = new Scanner(System.in);
         String line;
         do {
-            line = in.nextLine();
+            line = in.nextLine().trim();
             System.out.println("> "+line);
         } while (!"EXIT".equalsIgnoreCase(line));
         System.out.println("Bye.");
