@@ -1,17 +1,14 @@
 import console.*;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
 public class ApplicationConsole {
     public static void main(String[] args) {
-        ArrayList<Command> commands = new ArrayList<Command>() {{
-            add(new CmdBook());
-            add(new CmdHelp());
-            add(new CmdExit());
-            add(new CmdShow());
-        }};
+        List<Command> commands = Commands.all();
+
         System.out.println("Hello");
         Scanner in = new Scanner(System.in);
         Optional<Command> cmd;
