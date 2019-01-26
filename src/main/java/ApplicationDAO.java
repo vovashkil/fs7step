@@ -2,7 +2,7 @@ import dao.City;
 import dao.DAO;
 import dao.DAOCityHashMap;
 
-public class Application {
+public class ApplicationDAO {
     public static void main(String[] args) {
         DAO<City> cities = new DAOCityHashMap();
         cities.store(new City(1, "Kyiv"));
